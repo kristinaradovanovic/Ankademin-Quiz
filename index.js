@@ -6,62 +6,62 @@
         question: "The atomic number for lithium is 17?",
         answerOptions: ["true", "false"],
         rightAnswer: "false",
-        correctAnswerText: "The atomic number for lithium is 17" 
+        /* correctAnswerText: "The atomic number for lithium is 17"  */
       },
       {
           question: "A cross between a horse and a zebra is called a 'Hobra'?",
           answerOptions: ["true" , "false"],
         rightAnswer: "false",
-         correctAnswerText: "A male zebra and a female horse is called a 'zorse', and a female zebra and a male horse is called a 'zonkey'?" 
-      },
+          /* correctAnswerText: "A male zebra and a female horse is called a 'zorse', and a female zebra and a male horse is called a 'zonkey'?" */ 
+      }, 
       {
           question: "The black box in a plane is black?",
           answerOptions: ["true", "false"],
         rightAnswer: "false",
-         correctAnswerText: "They're actually orange?" 
+         /* correctAnswerText: "They're actually orange?"  */
         },
         {
           question: "Alliumphobia is a fear of garlic?",
           answerOptions: ["true", "false"],
           rightAnswer: "true",
-          correctAnswerText: "This answer is true!"
+          /* correctAnswerText: "This answer is true!" */
         },
         {
           question:"Prince Harry is taller than Prince William?",
           answerOptions: ["true", "false"],
           rightAnswer: "false",
-          correctAnswerText:"Prince William is 1.91m, Prince Harry is 1.86m"
+          /* correctAnswerText:"Prince William is 1.91m, Prince Harry is 1.86m" */
         },
         {
           question:"The star sign Aquarius is represented by a tiger?",
           answerOptions: ["true", "false"],
           rightAnswer:"false",
-          correctAnswerText: "It's a water-bearer ß"
+          /* correctAnswerText: "It's a water-bearer ß" */
           
         },
         {
           question:"Meryl Streep has won two Academy Awards?",
           answerOptions: ["true", "false"],
           rightAnswer: "false",
-          correctAnswerText: "she's won three! She won Best Actress for The Iron Lady in 2012, Best Actress for Sophie's Choice in 1983, Best Supporting Actress for Kramer vs. Kramer in 1980."
+          /* correctAnswerText: "she's won three! She won Best Actress for The Iron Lady in 2012, Best Actress for Sophie's Choice in 1983, Best Supporting Actress for Kramer vs. Kramer in 1980." */
         },
         {
           question: "Marrakesh is the capital of Morocco?",
           answerOptions: ["true", "false"],
           rightAnswer: "false",
-          correctAnswerText:"it's Rabat"
+          /* correctAnswerText:"it's Rabat" */
         },
         {
           question:"Idina Menzel sings 'let it go' 20 times in 'Let It Go' from Frozen?",
           answerOptions: ["true", "false"],
           rightAnswer:"false",
-          correctAnswerText:"she sings it 21 times!"
+          /* correctAnswerText:"she sings it 21 times!" */
         },
         {
           question:"Waterloo has the greatest number of tube platforms in London?",
           answerOptions: ["true", "false"],
           rightAnswer:"true",
-          correctAnswerText:"This is true!"
+          /* correctAnswerText:"This is true!" */
         },
 
 ]
@@ -149,7 +149,7 @@ function createQuiz(){
     })
 
 
-    //Check the result and show it in DIV
+    //Kolla resultat och skriva ut i DIV 
    
    if (correctAnswer>=maxPoints*0.75){
       resultDiv.innerText = "You did amazing!";
@@ -170,7 +170,7 @@ function createQuiz(){
 
 }
 
-
+// Darkmode event listener
 darkModeBtn.addEventListener("click", () =>{
 
   document.body.classList.add("darkmode");
@@ -178,6 +178,8 @@ darkModeBtn.addEventListener("click", () =>{
 
 })
 
+
+//Light mode event listener 
 lightModeBtn.addEventListener("click", ()=>{
 
   document.body.style.background = "white";
@@ -188,21 +190,3 @@ lightModeBtn.addEventListener("click", ()=>{
   
 //Här kör vi funktionen som skapar hela quiz
 createQuiz();
-
-
-
-//Check the result and show it in DIV
-     /* if (correctAnswer<maxPoints*0,5){
-      resultDiv. innerText = "You did not pass the quiz!";
-      resultDiv.style.color = "Red";
-    }
-    else if (correctAnswer>=maxPoints*0,50 || correctAnswer<maxPoints*0,75){
-      resultDiv.innerText = "You passed!";
-      resultDiv.style.color = "orange";
-    }
-
-      else if (correctAnswer>maxPoints*0,75){
-        resultDiv.innerText = "You did amazing!";
-        resultDiv.style.color = "green";
-      
-    } */  
