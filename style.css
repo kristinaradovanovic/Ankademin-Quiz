@@ -1,0 +1,95 @@
+body {
+
+    align-items: center;
+    background-color: antiquewhite;
+
+}
+
+
+h1 {display: flex;
+    justify-content: center;
+    align-items: center;
+     color: #7c795d; 
+     font-family: 'Trocchi', serif; 
+     font-size: 45px; 
+     font-weight: normal; 
+     line-height: 48px; 
+     margin: 0; }
+h2 {display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #7c795d; 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 28px; 
+    font-weight: 400; 
+    line-height: 32px; 
+    margin: 0 0 24px; }
+
+h3.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ ul.mainUl {
+    list-style-type: none;
+    display: flex;
+     justify-content: center; 
+    
+}
+
+button#check-answer{
+
+    list-style-type: none;
+    background-color: #7c795d;
+}
+
+
+div#answer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#toCenterButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+div#to-center-checkbtn{
+     display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+/*  My darkmode */
+.darkmode form {
+  
+    color: rgb(0, 113, 151);
+}
+
+.darkmode {
+
+    color: rgb(221, 166, 94);
+}
+
+button#darkMode{
+    background-color: rgb(41, 35, 35);
+    color: aliceblue;
+}
+
+button#lightMode{
+    background-color: rgb(188, 167, 138);
+    color: rgb(56, 32, 32);
+}
+
+div.rightAnswers{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
